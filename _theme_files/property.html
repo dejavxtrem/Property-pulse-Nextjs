@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,7 +20,7 @@
     <title>Property Pulse | Find local rental properties</title>
   </head>
   <body>
-    <nav class="bg-blue-700 border-b border-blue-500">
+    <nav class="border-b border-blue-500 bg-blue-700">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-20 items-center justify-between">
           <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
@@ -28,7 +28,7 @@
             <button
               type="button"
               id="mobile-dropdown-button"
-              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-none focus:ring-inset"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -62,7 +62,7 @@
                 alt="PropertyPulse"
               />
 
-              <span class="hidden md:block text-white text-2xl font-bold ml-2"
+              <span class="ml-2 hidden text-2xl font-bold text-white md:block"
                 >PropertyPulse</span
               >
             </a>
@@ -71,17 +71,17 @@
               <div class="flex space-x-2">
                 <a
                   href="/index.html"
-                  class="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                  class="rounded-md bg-black px-3 py-2 text-white hover:bg-gray-900 hover:text-white"
                   >Home</a
                 >
                 <a
                   href="/properties.html"
-                  class="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                  class="rounded-md px-3 py-2 text-white hover:bg-gray-900 hover:text-white"
                   >Properties</a
                 >
                 <a
                   href="/add-property.html"
-                  class="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                  class="rounded-md px-3 py-2 text-white hover:bg-gray-900 hover:text-white"
                   >Add Property</a
                 >
               </div>
@@ -89,12 +89,12 @@
           </div>
 
           <!-- Right Side Menu (Logged Out) -->
-          <div class="hidden md:block md:ml-6">
+          <div class="hidden md:ml-6 md:block">
             <div class="flex items-center">
               <button
-                class="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                class="flex items-center rounded-md bg-gray-700 px-3 py-2 text-white hover:bg-gray-900 hover:text-white"
               >
-                <i class="fa-brands fa-google text-white mr-2"></i>
+                <i class="fa-brands fa-google mr-2 text-white"></i>
                 <span>Login or Register</span>
               </button>
             </div>
@@ -104,10 +104,10 @@
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0"
           >
-            <a href="messages.html" class="relative group">
+            <a href="messages.html" class="group relative">
               <button
                 type="button"
-                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none"
               >
                 <span class="absolute -inset-1.5"></span>
                 <span class="sr-only">View notifications</span>
@@ -127,7 +127,7 @@
                 </svg>
               </button>
               <span
-                class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full"
+                class="absolute top-0 right-0 inline-flex translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-red-600 px-2 py-1 text-xs leading-none font-bold text-white"
               >
                 2
                 <!-- Replace with the actual number of notifications -->
@@ -138,7 +138,7 @@
               <div>
                 <button
                   type="button"
-                  class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none"
                   id="user-menu-button"
                   aria-expanded="false"
                   aria-haspopup="true"
@@ -156,7 +156,7 @@
               <!-- Profile dropdown -->
               <div
                 id="user-menu"
-                class="hidden absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                class="ring-opacity-5 absolute right-0 z-10 mt-2 hidden w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black focus:outline-none"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu-button"
@@ -194,24 +194,24 @@
 
       <!-- Mobile menu, show/hide based on menu state. -->
       <div class="hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
+        <div class="space-y-1 px-2 pt-2 pb-3">
           <a
             href="/index.html"
-            class="bg-black text-white block rounded-md px-3 py-2 text-base font-medium"
+            class="block rounded-md bg-black px-3 py-2 text-base font-medium text-white"
             >Home</a
           >
           <a
             href="/properties.html"
-            class="text-white block rounded-md px-3 py-2 text-base font-medium"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
             >Properties</a
           >
           <a
             href="/add-property.html"
-            class="text-white block rounded-md px-3 py-2 text-base font-medium"
+            class="block rounded-md px-3 py-2 text-base font-medium text-white"
             >Add Property</a
           >
           <button
-            class="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 my-5"
+            class="my-5 flex items-center rounded-md bg-gray-700 px-3 py-2 text-white hover:bg-gray-900 hover:text-white"
           >
             <i class="fa-brands fa-google mr-2"></i>
             <span>Login or Register</span>
@@ -223,26 +223,26 @@
     <!-- Search -->
     <section class="bg-blue-700 py-4">
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start"
+        class="mx-auto flex max-w-7xl flex-col items-start px-4 sm:px-6 lg:px-8"
       >
         <!-- Form Component -->
         <form
-          class="mt-3 mx-auto max-w-2xl w-full flex flex-col md:flex-row items-center"
+          class="mx-auto mt-3 flex w-full max-w-2xl flex-col items-center md:flex-row"
         >
-          <div class="w-full md:w-3/5 md:pr-2 mb-4 md:mb-0">
+          <div class="mb-4 w-full md:mb-0 md:w-3/5 md:pr-2">
             <label for="location" class="sr-only">Location</label>
             <input
               type="text"
               id="location"
               placeholder="Enter Location (City, State, Zip, etc"
-              class="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-blue-500"
+              class="w-full rounded-lg bg-white px-4 py-3 text-gray-800 focus:ring focus:ring-blue-500 focus:outline-none"
             />
           </div>
           <div class="w-full md:w-2/5 md:pl-2">
             <label for="property-type" class="sr-only">Property Type</label>
             <select
               id="property-type"
-              class="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-blue-500"
+              class="w-full rounded-lg bg-white px-4 py-3 text-gray-800 focus:ring focus:ring-blue-500 focus:outline-none"
             >
               <option value="All">All</option>
               <option value="Apartment">Apartment</option>
@@ -257,7 +257,7 @@
           </div>
           <button
             type="submit"
-            class="md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500"
+            class="mt-4 w-full rounded-lg bg-blue-500 px-6 py-3 text-white hover:bg-blue-600 focus:ring focus:ring-blue-500 focus:outline-none md:mt-0 md:ml-4 md:w-auto"
           >
             Search
           </button>
@@ -272,7 +272,7 @@
           <img
             src="images/properties/a1.jpg"
             alt=""
-            class="object-cover h-[400px] w-full"
+            class="h-[400px] w-full object-cover"
             width="1800"
           />
         </div>
@@ -281,10 +281,10 @@
 
     <!-- Go Back -->
     <section>
-      <div class="container m-auto py-6 px-6">
+      <div class="container m-auto px-6 py-6">
         <a
           href="/properties.html"
-          class="text-blue-500 hover:text-blue-600 flex items-center"
+          class="flex items-center text-blue-500 hover:text-blue-600"
         >
           <i class="fas fa-arrow-left mr-2"></i> Back to Properties
         </a>
@@ -293,54 +293,54 @@
 
     <!-- Property Info -->
     <section class="bg-blue-50">
-      <div class="container m-auto py-10 px-6">
-        <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
+      <div class="container m-auto px-6 py-10">
+        <div class="md:grid-cols-70/30 grid w-full grid-cols-1 gap-6">
           <main>
             <div
-              class="bg-white p-6 rounded-lg shadow-md text-center md:text-left"
+              class="rounded-lg bg-white p-6 text-center shadow-md md:text-left"
             >
-              <div class="text-gray-500 mb-4">Apartment</div>
-              <h1 class="text-3xl font-bold mb-4">Boston Commons Retreat</h1>
+              <div class="mb-4 text-gray-500">Apartment</div>
+              <h1 class="mb-4 text-3xl font-bold">Boston Commons Retreat</h1>
               <div
-                class="text-gray-500 mb-4 flex align-middle justify-center md:justify-start"
+                class="mb-4 flex justify-center align-middle text-gray-500 md:justify-start"
               >
                 <i
-                  class="fa-solid fa-location-dot text-lg text-orange-700 mr-2"
+                  class="fa-solid fa-location-dot mr-2 text-lg text-orange-700"
                 ></i>
                 <p class="text-orange-700">
                   120 Tremont Street Boston, MA 02111
                 </p>
               </div>
 
-              <h3 class="text-lg font-bold my-6 bg-gray-800 text-white p-2">
+              <h3 class="my-6 bg-gray-800 p-2 text-lg font-bold text-white">
                 Rates & Options
               </h3>
-              <div class="flex flex-col md:flex-row justify-around">
+              <div class="flex flex-col justify-around md:flex-row">
                 <div
-                  class="flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0"
+                  class="mb-4 flex items-center justify-center border-b border-gray-200 pb-4 md:border-b-0 md:pb-0"
                 >
-                  <div class="text-gray-500 mr-2 font-bold">Nightly</div>
+                  <div class="mr-2 font-bold text-gray-500">Nightly</div>
                   <div class="text-2xl font-bold">
                     <i class="fa fa-xmark text-red-700"></i>
                   </div>
                 </div>
                 <div
-                  class="flex items-center justify-center mb-4 border-b border-gray-200 md:border-b-0 pb-4 md:pb-0"
+                  class="mb-4 flex items-center justify-center border-b border-gray-200 pb-4 md:border-b-0 md:pb-0"
                 >
-                  <div class="text-gray-500 mr-2 font-bold">Weekly</div>
+                  <div class="mr-2 font-bold text-gray-500">Weekly</div>
                   <div class="text-2xl font-bold text-blue-500">$1,100</div>
                 </div>
-                <div class="flex items-center justify-center mb-4 pb-4 md:pb-0">
-                  <div class="text-gray-500 mr-2 font-bold">Monthly</div>
+                <div class="mb-4 flex items-center justify-center pb-4 md:pb-0">
+                  <div class="mr-2 font-bold text-gray-500">Monthly</div>
                   <div class="text-2xl font-bold text-blue-500">$4,200</div>
                 </div>
               </div>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
-              <h3 class="text-lg font-bold mb-6">Description & Details</h3>
+            <div class="mt-6 rounded-lg bg-white p-6 shadow-md">
+              <h3 class="mb-6 text-lg font-bold">Description & Details</h3>
               <div
-                class="flex justify-center gap-4 text-blue-500 mb-4 text-xl space-x-9"
+                class="mb-4 flex justify-center gap-4 space-x-9 text-xl text-blue-500"
               >
                 <p>
                   <i class="fa-solid fa-bed"></i> 3
@@ -355,74 +355,74 @@
                   1,500 <span class="hidden sm:inline">sqft</span>
                 </p>
               </div>
-              <p class="text-gray-500 mb-4">
+              <p class="mb-4 text-gray-500">
                 This is a beautiful apartment located near the commons
               </p>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
-              <h3 class="text-lg font-bold mb-6">Amenities</h3>
+            <div class="mt-6 rounded-lg bg-white p-6 shadow-md">
+              <h3 class="mb-6 text-lg font-bold">Amenities</h3>
 
               <ul
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none"
+                class="grid list-none grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
               >
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i> Wifi
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i> Wifi
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Full
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Full
                   kitchen
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Washer &
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Washer &
                   Dryer
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Free
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Free
                   Parking
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Hot Tub
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Hot Tub
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>24/7
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>24/7
                   Security
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i
                   >Wheelchair Accessible
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Elevator
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Elevator
                   Access
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i
                   >Dishwasher
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i
                   >Gym/Fitness Center
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Air
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Air
                   Conditioning
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i
                   >Balcony/Patio
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Smart TV
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Smart TV
                 </li>
                 <li>
-                  <i class="fas fa-check text-green-600 mr-2 mt-3"></i>Coffee
+                  <i class="fas fa-check mt-3 mr-2 text-green-600"></i>Coffee
                   Maker
                 </li>
               </ul>
             </div>
             <!-- Map -->
-            <div class="bg-white p-6 rounded-lg shadow-md mt-6">
+            <div class="mt-6 rounded-lg bg-white p-6 shadow-md">
               <div id="map"></div>
             </div>
           </main>
@@ -430,29 +430,29 @@
           <!-- Sidebar -->
           <aside class="space-y-4">
             <button
-              class="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
+              class="flex w-full items-center justify-center rounded-full bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-600"
             >
               <i class="fas fa-bookmark mr-2"></i> Bookmark Property
             </button>
             <button
-              class="bg-orange-500 hover:bg-orange-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center"
+              class="flex w-full items-center justify-center rounded-full bg-orange-500 px-4 py-2 font-bold text-white hover:bg-orange-600"
             >
               <i class="fas fa-share mr-2"></i> Share Property
             </button>
 
             <!-- Contact Form -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h3 class="text-xl font-bold mb-6">Contact Property Manager</h3>
+            <div class="rounded-lg bg-white p-6 shadow-md">
+              <h3 class="mb-6 text-xl font-bold">Contact Property Manager</h3>
               <form>
                 <div class="mb-4">
                   <label
-                    class="block text-gray-700 text-sm font-bold mb-2"
+                    class="mb-2 block text-sm font-bold text-gray-700"
                     htmlFor="name"
                   >
                     Name:
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                     id="name"
                     name="name"
                     type="text"
@@ -462,13 +462,13 @@
                 </div>
                 <div class="mb-4">
                   <label
-                    class="block text-gray-700 text-sm font-bold mb-2"
+                    class="mb-2 block text-sm font-bold text-gray-700"
                     htmlFor="email"
                   >
                     Email:
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                     id="email"
                     name="email"
                     type="email"
@@ -478,13 +478,13 @@
                 </div>
                 <div class="mb-4">
                   <label
-                    class="block text-gray-700 text-sm font-bold mb-2"
+                    class="mb-2 block text-sm font-bold text-gray-700"
                     htmlFor="phone"
                   >
                     Phone:
                   </label>
                   <input
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                     id="phone"
                     name="phone"
                     type="text"
@@ -493,13 +493,13 @@
                 </div>
                 <div class="mb-4">
                   <label
-                    class="block text-gray-700 text-sm font-bold mb-2"
+                    class="mb-2 block text-sm font-bold text-gray-700"
                     htmlFor="message"
                   >
                     Message:
                   </label>
                   <textarea
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline"
+                    class="focus:shadow-outline h-44 w-full appearance-none rounded border px-3 py-2 text-gray-700 shadow focus:outline-none"
                     id="message"
                     name="message"
                     placeholder="Enter your message"
@@ -507,7 +507,7 @@
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline flex items-center justify-center"
+                    class="focus:shadow-outline flex w-full items-center justify-center rounded-full bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-600 focus:outline-none"
                     type="submit"
                   >
                     <i class="fas fa-paper-plane mr-2"></i> Send Message
@@ -528,28 +528,28 @@
             <img
               src="./images/properties/a1.jpg"
               alt=""
-              class="object-cover h-[400px] w-full rounded-xl cursor-pointer"
+              class="h-[400px] w-full cursor-pointer rounded-xl object-cover"
             />
           </div>
           <div class="col-span-2">
             <img
               src="./images/properties/a2.jpg"
               alt=""
-              class="object-cover h-[400px] w-full rounded-xl cursor-pointer"
+              class="h-[400px] w-full cursor-pointer rounded-xl object-cover"
             />
           </div>
           <div class="col-span-2">
             <img
               src="./images/properties/a3.jpg"
               alt=""
-              class="object-cover h-[400px] w-full rounded-xl cursor-pointer"
+              class="h-[400px] w-full cursor-pointer rounded-xl object-cover"
             />
           </div>
           <div class="col-span-2">
             <img
               src="./images/properties/a4.jpg"
               alt=""
-              class="object-cover h-[400px] w-full rounded-xl cursor-pointer"
+              class="h-[400px] w-full cursor-pointer rounded-xl object-cover"
             />
           </div>
         </div>
@@ -557,15 +557,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-200 py-4 mt-auto">
+    <footer class="mt-auto bg-gray-200 py-4">
       <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
+        class="container mx-auto flex flex-col items-center justify-between px-4 md:flex-row"
       >
         <div class="mb-4 md:mb-0">
           <img src="/images/logo.png" alt="Logo" class="h-8 w-auto" />
         </div>
         <div
-          class="flex flex-wrap justify-center md:justify-start mb-4 md:mb-0"
+          class="mb-4 flex flex-wrap justify-center md:mb-0 md:justify-start"
         >
           <ul class="flex space-x-4">
             <li><a href="/properties.html">Properties</a></li>
@@ -573,7 +573,7 @@
           </ul>
         </div>
         <div>
-          <p class="text-sm text-gray-500 mt-2 md:mt-0">
+          <p class="mt-2 text-sm text-gray-500 md:mt-0">
             &copy; 2024 PropertyPulse. All rights reserved.
           </p>
         </div>
