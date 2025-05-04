@@ -9,6 +9,16 @@ import {
 } from 'react-icons/fa';
 
 const PropertyCard = ({ property }) => {
+  const getRateDisplay = () => {
+    const { rates } = property;
+    if (rates.monthly) {
+      return `$${rates.monthly.toLocaleString()}/mo`;
+    } else if (rates.weekly) {
+      return `$${rates.weekly.toLocaleString()}/wk`;
+    } else if (rates.nightly) {
+      return `$${rates.nightly.toLocaleString()}/night`;
+    }
+  };
   return (
     <div className='relative rounded-xl shadow-md'>
       <Image
@@ -26,7 +36,7 @@ const PropertyCard = ({ property }) => {
           <h3 className='text-xl font-bold'>{property.name}</h3>
         </div>
         <h3 className='absolute top-[10px] right-[10px] rounded-lg bg-white px-4 py-2 text-right font-bold text-blue-500 md:text-center lg:text-right'>
-          {/* {getRateDisplay()} */}
+          {getRateDisplay()}
         </h3>
 
         <div className='mb-4 flex justify-center gap-4 text-gray-500'>
